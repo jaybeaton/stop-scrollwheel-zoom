@@ -1,0 +1,17 @@
+{
+	"name": "Stop Scroll-Wheel Zoom",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Prevents ctrl-scroll from zooming page text.",
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["js/stop-scrollwheel-zoom.js"]
+		}
+	],
+	"background": { },
+	"options_page": "",
+	"permissions": [],
+	"minimum_chrome_version": "21",
+	"icons": { "128": "images/icon_128.png" }
+}
